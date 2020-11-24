@@ -1,4 +1,4 @@
-function newItem() {
+  function newItem() {
 
     // Store user input
     var item = document.getElementById("input").value;
@@ -28,6 +28,13 @@ document.body.onkeyup = function(i) {
     newItem();
   }
 };
+
+
+
+document.getElementById("button").addEventListener("click", function() {
+  newItem(); 
+})
+
 
 // Remove item list when clicked
 function removeItem(e) {
